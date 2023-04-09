@@ -1,148 +1,150 @@
 import React from 'react';
 import "./index.scss"
+import Card from '../././../UI/Card/Card'
 
 import img1 from "../../assets/images/avatar.png"
 import img2 from "../../assets/images/card-imh.png"
+import PostCard from '../../UI/Card/PostCard';
+import FuturedCard from '../../UI/Card/FuturedCard';
 
 const Main = () => {
+
+
+    function card(props) {}
+
+    const heroCard = [
+        {
+            "title": "Hi, I am John, Creative Technologist",
+            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "btn": "Download Resume",
+            "img": img1,
+        }
+    ]
+
+    function post(props){}
+
+    const postCard = [
+        {
+            "title": "Making a design system from scratch",
+            "data": "12 Feb 2020     |      Design, Pattern",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+        {
+            "title": "Creating pixel perfect icons in Figma",
+            "data": "12 Feb 2020     |      Figma, Icon Design",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        }
+    ]
+
+    function futured(props){}
+
+    const futuredCard = [
+        {
+            "title": "Designing Dashboards",
+            "year": "2020",
+            "img": img2,
+            "data": "Dashboard",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+        {
+            "title": "Vibrant Portraits of 2020",
+            "year": "2018",
+            "img": img2,
+            "data": "Illustration",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },        {
+            "title": "36 Days of Malayalam type",
+            "year": "2018",
+            "img": img2,
+            "data": "Typography",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+    ]
+
     return (
         <>
-                        {/* ----- main start ----- */}
+            {/* ----- main start ----- */}
 
-                        <main>
+            <main>
 
-{/* ----- hero start ----- */}
+                {/* ----- hero start ----- */}
 
-<div className="section-hero">
-    <div className="container">
-        <div className="hero">
-
-            <div className="hero__box">
-
-                <h1 className="hero__box--heading">Hi, I am John, Creative Technologist</h1>
-                <p className="hero__box--text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button className="hero__box--btn">Download Resume</button>
-
-            </div>
-
-            <img className="hero__img" src={img1} alt="customer"></img>
-
-        </div>
-    </div>
-</div>
-
-
-{/* ----- hero end ----- */}
-
-
-
-{/* ----- posts star ----- */}
-
-
-<section className="section-posts">
-    <div className="container">
-
-        <div className="posts">
-
-            <h2 className="posts__heading">Recent posts</h2>
-            <a href="#" className="posts__link">View all</a>
-
-            <div className="posts__box">
-
-                <div className="posts__box--post">
-                    <h3 className="posts__box--post-title">Making a design system from scratch</h3>
-                    <p className="posts__box--post-data">12 Feb 2020     |      Design, Pattern</p>
-                    <p className="posts__box--post-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-
-                <div className="posts__box--post">
-                    <h3 className="posts__box--post-title">Creating pixel perfect icons in Figma</h3>
-                    <p className="posts__box--post-data">12 Feb 2020     |      Figma, Icon Design</p>
-                    <p className="posts__box--post-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-{/* ----- posts star ----- */}
-
-
-
-{/* ----- Futured start ----- */}
-
-
-<section className="section-futured">
-    <div className="container">
-
-        <div className="futured">
-
-            <h3 className="futured__title">Featured works</h3>
-
-            <div className="futured__cards">
-
-                <div className="futured__cards--card">
-                    <img className="futured__cards--card-img" src={img2} alt="Avatar"/>
-                    <div className="futured__cards--card-info">
-                        <h3 className="futured__cards--card-info-title">Designing Dashboards</h3>
-                        <div className="futured__cards--card-info-data">
-                            <h4 className="futured__cards--card-info-data-year">2020</h4>
-                            <p className="futured__cards--card-info-data-text">Dashboard</p>
-                        </div>
-                        <p className="futured__cards--card-info-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div className="section-hero">
+                    <div className="container">
+                        {
+                            heroCard.map((item) => {
+                                return <Card item={item} />
+                            })
+                        }
                     </div>
                 </div>
 
-                <span className="line"></span>
 
-                <div className="futured__cards--card">
-                    <img className="futured__cards--card-img" src={img2} alt="Avatar"/>
-                    <div className="futured__cards--card-info">
-                        <h3 className="futured__cards--card-info-title">Vibrant Portraits of 2020</h3>
-                        <div className="futured__cards--card-info-data">
-                            <h4 className="futured__cards--card-info-data-year">2018</h4>
-                            <p className="futured__cards--card-info-data-text">Illustration</p>
+                {/* ----- hero end ----- */}
+
+
+
+                {/* ----- posts star ----- */}
+
+
+                <section className="section-posts">
+                    <div className="container">
+
+                        <div className="posts">
+
+                            <h2 className="posts__heading">Recent posts</h2>
+                            <a href="#" className="posts__link">View all</a>
+
+                            <div className="posts__box">
+
+                            {
+                            postCard.map((item) => {
+                                return <PostCard item={item} />
+                            })
+                        }
+
+                            </div>
+
                         </div>
-                        <p className="futured__cards--card-info-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
                     </div>
-                </div>
+                </section>
 
-                <span className="line"></span>
 
-                <div className="futured__cards--card">
-                    <img className="futured__cards--card-img" src={img2} alt="Avatar"/>
-                    <div className="futured__cards--card-info">
-                        <h3 className="futured__cards--card-info-title">36 Days of Malayalam type</h3>
-                        <div className="futured__cards--card-info-data">
-                            <h4 className="futured__cards--card-info-data-year">2018</h4>
-                            <p className="futured__cards--card-info-data-text">Typography</p>
+                {/* ----- posts star ----- */}
+
+
+                {/* ----- Futured start ----- */}
+
+
+                <section className="section-futured">
+                    <div className="container">
+
+                        <div className="futured">
+
+                            <h3 className="futured__title">Featured works</h3>
+
+                            <div className="futured__cards">
+                                {
+                                    futuredCard.map((item) => {
+                                        return <FuturedCard item={item}/>
+                                    })
+                                }
+
+                            </div>
+
                         </div>
-                        <p className="futured__cards--card-info-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
                     </div>
-                </div>
-
-                <span className="line"></span>
+                </section>
 
 
-            </div>
-
-        </div>
-
-    </div>
-</section>
+                {/* ----- Futured end ----- */}
 
 
-{/* ----- Futured end ----- */}
+            </main>
 
-
-</main>
-
-{/* ----- main end ----- */}
+            {/* ----- main end ----- */}
         </>
     );
 };
