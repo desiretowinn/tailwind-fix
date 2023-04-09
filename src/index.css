@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Heebo', sans-serif;
+  color: black;
+}
+
+.container{
+  max-width: 1152px;
+  margin: 0px auto;
+  padding: 27px 148px;
+}

@@ -1,0 +1,17 @@
+.header{
+    padding-top: 27px;
+    width: 236px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 70%;
+    margin-bottom: 140px;
+
+    &__link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+}
+}
+

@@ -1,0 +1,207 @@
+/* -------- hero -------- */
+
+.hero {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 71px;
+    
+    &__box {
+        &--heading {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 60px;
+            color: #21243D;
+            width: 440px;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        
+        &--text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243D;
+            width: 497px;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        
+        &--btn {
+            width: 208px;
+            height: 47px;
+            background: #FF6464;
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+/* ----- posts  ----- */
+
+.section-posts {
+    padding: 7px 0px 32px 0px;
+    background: #EDF7FA;
+}
+
+.posts {
+    &__heading {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 60px;
+        color: #21243D;
+        display: inline;
+    }
+    
+    
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #00A8CC;
+        text-decoration: none;
+        display: inline;
+        margin-left: 78%;
+    }
+    
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &--post {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+            border-radius: 4px;
+            width: 418px;
+            padding: 24px 21px;
+            
+            &-title {
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 38px;
+                color: #21243D;
+                margin-bottom: 17px;
+            }
+            
+            &-data {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: #21243D;
+                margin-bottom: 11px;
+            }
+            
+            &-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #21243D;
+            }
+        }
+    }
+    
+    
+    
+    
+}
+
+
+
+
+/* ----- Futured ----- */
+
+.futured {
+    
+    
+    
+    &__title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 60px;
+        margin-bottom: 22px;
+        margin-top: 15px;
+    }
+    
+    &__cards {
+        
+        
+        &--card {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            
+            
+            &-info {
+                width: 580px;
+                
+                
+                
+                &-title {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 44px;
+                    color: #21243D;
+                    margin-bottom: 16px;
+                }
+                
+                &-data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 200px;
+                    margin-bottom: 16px;
+                    
+                    &-year {
+                        font-weight: 900;
+                        font-size: 18px;
+                        color: #FFFFFF;
+                        background: #142850;
+                        border-radius: 16px;
+                        width: 62px;
+                        height: 25px;
+                        padding: 0px 10px;
+                    }
+                    
+                    &-text {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 29px;
+                        color: #8695A4;
+                    }
+                }
+                
+                &-text{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #21243D;
+                }
+                
+            }
+        }
+        
+        .line {
+    display: block;
+    width: 858px;
+    height: 0px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 30px;
+}
+    }
+    
+    
+}
+
